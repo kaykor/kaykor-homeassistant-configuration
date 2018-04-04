@@ -27,7 +27,3 @@
     # track_new_devices: yes
     # verify_ssl: 'True'
 
-  - platform: traccar
-    username: kaykor@gmail.com
-    password: aC7ion&5292
-    host: http://192.168.2.34:8082
