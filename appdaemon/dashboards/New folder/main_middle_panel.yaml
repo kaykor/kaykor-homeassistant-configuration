@@ -1,0 +1,27 @@
+mediaplayer:
+    widget_type: media_player
+    entity: media_player.livingroom
+    
+porch_motion:
+    widget_type: binary_sensor
+    title: Porch
+    entity: binary_sensor.multisensor_6_in_1_23
+
+media1:
+    widget_type: media_player
+    title: Google Home
+
+layout:
+    - empty: 120
+    - spacer(20x1), porch_motion(120x120), spacer(20x1), device_tracker.f0d7aa8038cb(120x120), spacer(20x1), device_tracker.cc29f53ae069(120x120), spacer(20x1), light.livingroom_lights_level(120x120), spacer(20x1), light.kitchen_lights_level(120x120), spacer(20x1), light.bedroom_lights_level(120x120)
+    - empty: 140
+    - spacer(20x1), media1(120x120), spacer(20x1), sensor.frontdoorstatus(120x120), spacer(20x1), sensor.backdoorstatus(120x120), spacer(20x1), media_player.kitchen_home(260x260)
+    - empty: 140
+    - spacer(20x1), climate.family_room(120x120), spacer(20x1), switch.family_room_lamp(120x120)
+    - empty: 136
+    
+    
+    
+    
+    
+    
