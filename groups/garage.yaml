@@ -1,0 +1,20 @@
+  name: Garage
+  view: true
+  icon: mdi:garage
+  entities:
+    - lock.first_deadbolt_29
+    # # - light.in_wall_dimmer_30
+    # - switch.granny_kitchen_38
+    # # - lock.right_garage_door_12
+    # # - lock.left_garage_door_11
+    # # - lock.garage_door_opener_13
+    # - switch.garage_miner
+    # - switch.garage_2_right
+    # - switch.workbench_one
+    # - switch.workbench_two
+    
+    
+    - cover.garage_door_opener
+    - cover.left_garage_door_opener
+    - cover.right_garage_door_opener
+    # - camera.everbody

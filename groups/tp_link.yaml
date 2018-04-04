@@ -1,0 +1,11 @@
+  name: TP Link
+  icon: mdi:hot-tub
+  view: true
+  entities:
+
+    - group.tpmain
+    - group.tp_link_2
+    - switch.garage_miner
+    - switch.garage_2_right
+    - switch.workbench_one
+    - switch.workbench_two

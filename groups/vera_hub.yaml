@@ -1,0 +1,22 @@
+    name: Vera_Hub
+    view: true
+    entities:
+
+      - switch.multisensor_6_in_1_23
+      - switch.granny_kitchen_38
+      - sensor.temperature_15
+      - sensor.low_temperature_16
+      - sensor.humidity_18
+      - sensor.high_temperature_17
+      - sensor.6_in_1_multisensor_temperature_24
+      - sensor.6_in_1_multisensor_light_25
+      - sensor.6_in_1_multisensor_humidity_26
+      - lock.right_garage_door_12
+      - lock.left_garage_door_11
+      - lock.garage_door_opener_13
+      - lock.first_deadbolt_29
+      - light.rec_room_first_light_42
+      - light.in_wall_dimmer_30
+      - light.basement_entry_41
+      - binary_sensor.multisensor_6_in_1_23
+      - light.stairway_basement_43

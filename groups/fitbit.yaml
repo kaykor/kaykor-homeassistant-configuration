@@ -1,0 +1,33 @@
+  name: Laurie's Fitbit
+  view: no
+  entities:
+     - sensor.activity_calories
+     - sensor.alta_hr_battery
+     - sensor.awakenings_count
+     - sensor.bmi
+     - sensor.body_fat
+     - sensor.calories
+     - sensor.calories_bmr
+     - sensor.distance
+     - sensor.minutes_after_wakeup
+     - sensor.minutes_fairly_active
+     - sensor.minutes_lightly_active
+     - sensor.minutes_sedentary
+     - sensor.minutes_very_active
+     - sensor.resting_heart_rate
+     - sensor.sleep_efficiency
+     - sensor.sleep_minutes_asleep
+     - sensor.sleep_minutes_awake
+     - sensor.sleep_minutes_to_fall_asleep
+     - sensor.sleep_start_time
+     - sensor.sleep_time_in_bed
+     - sensor.steps
+     - sensor.tracker_activity_calories
+     - sensor.tracker_calories
+     - sensor.tracker_distance
+     - sensor.tracker_minutes_fairly_active
+     - sensor.tracker_minutes_lightly_active
+     - sensor.tracker_minutes_sedentary
+     - sensor.tracker_minutes_very_active
+     - sensor.tracker_steps
+     - sensor.weight

@@ -1,0 +1,9 @@
+  name: Media Living Room
+  view: no
+  # icon: mdi:cast-connected
+  entities:
+    - media_player.living_room
+    - sensor.music_listening_this_week_liv
+    - sensor.percent_playing_music_weekly_liv
+    - sensor.music_listening_this_month_liv
+    - sensor.percent_playing_music_monthly_liv

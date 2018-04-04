@@ -1,0 +1,82 @@
+  name: Synology Status
+  view: no
+  icon: mdi:server
+  entities:
+    - sensor.memory_total_real
+    - sensor.memory_available_real
+    - sensor.memory_usage_real
+    - sensor.memory_available_swap
+    - sensor.memory_cached
+    - sensor.memory_size
+    - sensor.network_up
+    - sensor.network_down
+    - sensor.cpu_load_total
+    - sensor.cpu_load_user
+    - sensor.cpu_load_system
+    - sensor.cpu_load_other
+    - sensor.cpu_load_1_min
+    - sensor.cpu_load_5_min
+    - sensor.cpu_load_15_min
+    - sensor.cpu_use
+    - sensor.maximum_disk_temp_volume_1
+    - sensor.device_sda
+    - sensor.device_sdb
+    - sensor.device_sdc
+    - sensor.device_sdd
+    - sensor.device_sde
+    - sensor.device_sdf
+    - sensor.device_sdg
+    - sensor.device_sdh
+    # # - sensor.status_sda	
+    # # - sensor.status_sdb	
+    # # - sensor.status_sdc	
+    # # - sensor.status_sdd	
+    # # - sensor.status_sde	
+    # # - sensor.status_sdf	
+    # # - sensor.status_sdg	
+    # # - sensor.status_sdh
+    # # - sensor.status_smart_sda
+    # # - sensor.status_smart_sdb	
+    # # - sensor.status_smart_sdc	
+    # # - sensor.status_smart_sdd	
+    # # - sensor.status_smart_sde	
+    # # - sensor.status_smart_sdf	
+    # # - sensor.status_smart_sdg	
+    # # - sensor.status_smart_sdh	
+    # # - sensor.temperature_sda	
+    # # - sensor.temperature_sdb	
+    # # - sensor.temperature_sdc	
+    # # - sensor.temperature_sdd	
+    # # - sensor.temperature_sde	
+    # # - sensor.temperature_sdf	
+    # # - sensor.temperature_sdg	
+    # # - sensor.temperature_sdh
+    - sensor.below_min_remaining_life_sda
+    - sensor.below_min_remaining_life_sdb
+    - sensor.below_min_remaining_life_sdc
+    - sensor.below_min_remaining_life_sdd
+    - sensor.below_min_remaining_life_sde
+    - sensor.below_min_remaining_life_sdf
+    - sensor.below_min_remaining_life_sdg
+    - sensor.below_min_remaining_life_sdh
+    - sensor.exceeded_max_bad_sectors_sda
+    - sensor.exceeded_max_bad_sectors_sdb
+    - sensor.exceeded_max_bad_sectors_sdc
+    - sensor.exceeded_max_bad_sectors_sdd
+    - sensor.exceeded_max_bad_sectors_sde
+    - sensor.exceeded_max_bad_sectors_sdf
+    - sensor.exceeded_max_bad_sectors_sdg
+    - sensor.exceeded_max_bad_sectors_sdh
+    - sensor.name_sda
+    - sensor.name_sdb
+    - sensor.name_sdc
+    - sensor.name_sdd
+    - sensor.name_sde
+    - sensor.name_sdf
+    - sensor.name_sdg
+    - sensor.name_sdh
+    # # - sensor.total_size_volume_1	
+    # # - sensor.type_volume_1	
+    # # - sensor.used_space_volume_1	
+    # # - sensor.status_volume_1	
+    - sensor.volume_used_volume_1     

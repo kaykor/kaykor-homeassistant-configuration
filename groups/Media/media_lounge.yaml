@@ -1,0 +1,9 @@
+  name: Media Sonos Kitchen
+  view: no
+  # icon: mdi:cast-connected
+  entities:
+    - media_player.lounge
+    - sensor.music_listening_this_week_lounge
+    - sensor.percent_playing_music_weekly_lounge
+    - sensor.music_listening_this_month_lounge
+    - sensor.percent_playing_music_monthly_lounge

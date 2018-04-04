@@ -1,0 +1,9 @@
+  name: HA Controls
+  view: true
+  icon: mdi:server-network
+  entities:
+    - group.synology_volume_status
+    - group.synology_drive_status
+    - group.synology_cpu_memory_status
+    - group.speedtest
+    # - group.teksavvy

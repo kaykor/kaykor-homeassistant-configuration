@@ -1,0 +1,5 @@
+  name: Multi Sensor
+  view: true
+  icon: mdi:hexagon-multiple
+  entities:
+    - group.aeotec_zw100

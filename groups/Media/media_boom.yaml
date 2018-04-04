@@ -1,0 +1,9 @@
+  name: Laundry Boombox
+  view: no
+  # icon: mdi:cast-connected
+  entities:
+    - media_player.boombox
+    - sensor.music_listening_this_week_boom
+    - sensor.percent_playing_music_weekly_boom
+    - sensor.music_listening_this_month_boom
+    - sensor.percent_playing_music_monthly_boom

@@ -1,0 +1,9 @@
+  name: Home Group Audio
+  view: no
+  # icon: mdi:cast-connected
+  entities:
+    - media_player.home_group
+    - sensor.music_listening_this_week_group
+    - sensor.percent_playing_music_weekly_group
+    - sensor.music_listening_this_month_group
+    - sensor.percent_playing_music_monthly_group

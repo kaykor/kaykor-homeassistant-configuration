@@ -1,0 +1,6 @@
+  name: Where are They
+  view: true
+  # icon: mdi:weather-pouring
+  entities:
+    - group.wheree_is
+    - group.fitbit

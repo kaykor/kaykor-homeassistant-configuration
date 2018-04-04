@@ -1,0 +1,8 @@
+    name: TP Link 2
+    entities:
+      - sensor.tp_link_amps_2
+      - sensor.tp_link_watts_2
+      - sensor.tp_link_kw_2
+      - sensor.tp_link_kw_today_2      
+      - sensor.tp_link_volts_2
+      - switch.garage_2_right      

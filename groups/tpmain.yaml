@@ -1,0 +1,8 @@
+    name: TP Link Main
+    entities:
+      - sensor.tp_link_amps
+      - sensor.tp_link_watts
+      - sensor.tp_link_kw
+      - sensor.tp_link_kw_today      
+      - sensor.tp_link_volts
+      - switch.garage_miner

@@ -1,0 +1,34 @@
+   name: Where Is
+   view: no
+   entities:
+   
+     - sensor.randy
+     - camera.randy
+     - camera.randy_streetview
+   
+     - sensor.laurie
+     - camera.laurie
+     - camera.laurie_streetview
+   
+     - sensor.kaylee
+     - camera.kaylee
+     - camera.kaylee_streetview
+   
+     - sensor.koral
+     - camera.koral
+     - camera.koral_streetview
+   
+     - sensor.kelsey
+     - camera.kelsey
+     - camera.kelsey_streetview
+     
+     - device_tracker.keelin_1
+     - sensor.derek
+     - device_tracker.kent
+     - device_tracker.wired
+
+   #
+  #    - camera.kaylee_bedroom
+  #    - camera.koral_bedroom
+  #    - camera.kaylee_bedroom2
+  #    - camera.rec_room
