@@ -1,0 +1,25 @@
+#camera 1:
+  - platform: generic
+    name: Laurie Streetview
+    still_image_url: https://maps.googleapis.com/maps/api/streetview?location={{ states.device_tracker.laurie_cell.attributes.latitude }},{{ states.device_tracker.laurie_cell.attributes.longitude }}&size=456x456&key=!secret google_streetview_api
+    limit_refetch_to_url_change: true
+#camera 2:
+  - platform: generic
+    name: Randy Streetview
+    still_image_url: https://maps.googleapis.com/maps/api/streetview?location={{ states.device_tracker.randy_cell_phone.attributes.latitude }},{{ states.device_tracker.randy_cell_phone.attributes.longitude }}&size=456x456&key=!secret google_streetview_api
+    limit_refetch_to_url_change: true
+#camera 3:
+  - platform: generic
+    name: Kelsey Streetview
+    still_image_url: https://maps.googleapis.com/maps/api/streetview?location={{ states.device_tracker.kelsey_shank.attributes.latitude }},{{ states.device_tracker.kelsey_shank.attributes.longitude }}&size=456x456&key=!secret google_streetview_api
+    limit_refetch_to_url_change: true
+# #camera 4:
+  # - platform: generic
+    # name: Kaylee Streetview
+    # still_image_url: https://maps.googleapis.com/maps/api/streetview?location={{ states.device_tracker['5'].attributes.latitude }},{{ states.device_tracker['5'].attributes.longitude }}&size=456x456&key=!secret google_streetview_api
+    # limit_refetch_to_url_change: true
+#camera 5:
+  - platform: generic
+    name: Koral Streetview
+    still_image_url: https://maps.googleapis.com/maps/api/streetview?location={{ states.device_tracker.koral_cell.attributes.latitude }},{{ states.device_tracker.koral_cell.attributes.longitude }}&size=456x456&key=!secret google_streetview_api
+    limit_refetch_to_url_change: true

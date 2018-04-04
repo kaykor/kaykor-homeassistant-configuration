@@ -1,0 +1,30 @@
+#camera 1:
+  - platform: generic
+    name: Randy
+    still_image_url: https://maps.googleapis.com/maps/api/staticmap?size=500x500&zoom=15&maptype=roadmap&markers=color:blue|label:R|{{ states.device_tracker.randy_cell_phone.attributes.latitude }},{{ states.device_tracker.randy_cell_phone.attributes.longitude }}&key=!secret google_staticmap_api
+    limit_refetch_to_url_change: true
+#camera 2:
+  - platform: generic
+    name: Kelsey
+    still_image_url: https://maps.googleapis.com/maps/api/staticmap?size=500x500&zoom=15&maptype=roadmap&markers=color:red|label:S|{{ states.device_tracker.kelsey_shank.attributes.latitude }},{{ states.device_tracker.kelsey_shank.attributes.longitude }}&key=!secret google_staticmap_api
+    limit_refetch_to_url_change: true
+#camera 3:
+  - platform: generic
+    name: Everbody
+    still_image_url: https://maps.googleapis.com/maps/api/staticmap?size=800x800&scale=2&maptype=hybrid&markers=color:blue|label:R|{{ states.device_tracker.randy_cell_phone.attributes.latitude }},{{ states.device_tracker.randy_cell_phone.attributes.longitude }}&markers=color:red|label:S|{{ states.device_tracker.kelsey_shank.attributes.latitude }},{{ states.device_tracker.kelsey_shank.attributes.longitude }} &markers=color:orange|label:L|{{ states.device_tracker.laurie_cell.attributes.latitude }},{{ states.device_tracker.laurie_cell.attributes.longitude }}&markers=color:green|label:K|{{ states.device_tracker.koral_cell.attributes.latitude }},{{ states.device_tracker.koral_cell.attributes.longitude }} &markers=color:purple|label:K|{{ states.device_tracker['5'].attributes.latitude }},{{ states.device_tracker['5'].attributes.longitude }}&key=!secret google_staticmap_api
+    limit_refetch_to_url_change: true
+#camera 4:
+  - platform: generic
+    name: Koral
+    still_image_url: https://maps.googleapis.com/maps/api/staticmap?size=500x500&zoom=15&maptype=roadmap&markers=color:green|label:K|{{ states.device_tracker.koral_cell.attributes.latitude }},{{ states.device_tracker.koral_cell.attributes.longitude }}&key=!secret google_staticmap_api
+    limit_refetch_to_url_change: true
+# #camera 5:
+  # - platform: generic
+    # name: Kaylee
+    # still_image_url: https://maps.googleapis.com/maps/api/staticmap?size=500x500&zoom=15&maptype=roadmap&markers=color:purple|label:A|{{ states.device_tracker['5'].attributes.latitude }},{{ states.device_tracker['5'].attributes.longitude }}&key=!secret google_staticmap_api
+    # limit_refetch_to_url_change: true
+#camera 6:
+  - platform: generic
+    name: Laurie
+    still_image_url: https://maps.googleapis.com/maps/api/staticmap?size=500x500&zoom=15&maptype=roadmap&markers=color:orange|label:L|{{ states.device_tracker.laurie_cell.attributes.latitude }},{{ states.device_tracker.laurie_cell.attributes.longitude }}&key=!secret google_staticmap_api
+    limit_refetch_to_url_change: true
