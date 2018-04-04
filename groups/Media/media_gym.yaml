@@ -1,0 +1,9 @@
+  name: Sonos Gymnastics
+  view: no
+  # icon: mdi:cast-connected
+  entities:
+    - media_player.gymnastics
+    - sensor.music_listening_this_week_gym
+    - sensor.percent_playing_music_weekly_gym
+    - sensor.music_listening_this_month_gym
+    - sensor.percent_playing_music_monthly_gym

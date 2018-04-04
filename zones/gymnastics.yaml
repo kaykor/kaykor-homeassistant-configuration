@@ -1,0 +1,5 @@
+name: Gymnastics
+latitude: !secret gymnastic_lat
+longitude: !secret gymnastic_lon
+radius: 100
+icon: mdi:account-multiple

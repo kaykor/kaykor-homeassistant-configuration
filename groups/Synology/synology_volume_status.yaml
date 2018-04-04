@@ -1,0 +1,9 @@
+name: Synology Volume 1 Status
+view: no
+icon: mdi:server
+entities:
+    - sensor.total_size_volume_1
+    - sensor.type_volume_1
+    - sensor.used_space_volume_1
+    - sensor.status_volume_1
+    - sensor.volume_used_volume_1

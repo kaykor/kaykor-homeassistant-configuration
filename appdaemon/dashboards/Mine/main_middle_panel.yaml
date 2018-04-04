@@ -1,0 +1,109 @@
+media_player:
+    widget_type: media_player
+    title: Google Home
+    
+testlight1:
+    widget_type: light
+    entity: light.in_wall_dimmer_30
+    title: Rec Room
+    title2: Panel Lights
+    on_attributes:
+        brightness: 237
+    
+testlight2:
+    widget_type: light
+    entity: light.rec_room_first_light_42
+    title: Rec Room
+    title2: Pot Lights
+    on_attributes:
+        brightness: 186
+
+clock:
+    widget_type: clock
+
+weather:
+    widget_type: weather
+    units: "&deg;C"
+
+side_temperature:
+    widget_type: sensor
+    title: Temperature
+    units: "&deg;C"
+    precision: 0
+    entity: sensor.temperature_15
+
+side_humidity:
+    widget_type: sensor
+    title: Humidity
+    units: "%"
+    precision: 0
+    entity: sensor.humidity_18
+
+light_level:
+    widget_type: sensor
+    title: Light Level
+    units: "lux"
+    precision: 0
+    shorten: 1
+    entity: sensor.6_in_1_multisensor_light_25
+
+porch_motion:
+    widget_type: binary_sensor
+    title: Porch
+    entity: binary_sensor.multisensor_6_in_1_23
+
+garage1:
+    widget_type: lock
+    title: Garage
+    title2: Left Door
+    entity: lock.left_garage_door_11
+    icon_on: fa-car
+    icon_off: fa-car
+    warn: 1
+garage2:
+    widget_type: lock
+    title: Garage
+    title2: Right Door
+    entity: lock.right_garage_door_12
+    icon_on: fa-car
+    icon_off: fa-car
+    warn: 1
+garage3:
+    widget_type: lock
+    title: Garage
+    title2: 280 Oak
+    entity: lock.garage_door_opener_13
+    icon_on: fa-car
+    icon_off: fa-car
+    warn: 1
+
+summary:
+  widget_type: sensor
+  title: Summary
+  #precision: 0
+  value_style: "font-size: 100%"
+  entity: sensor.dark_sky_daily_summary
+  
+door1:
+    widget_type: lock
+    title: Door
+    title2: Lower Entry
+    entity: lock.first_deadbolt_29
+    icon_on: mdi-lock-open #fa-window-maximize
+    icon_off: mdi-lock #fa-window-maximize
+    warn: 1
+
+layout:
+    # - empty: 1
+    - weather(2x2), side_temperature(1x1), side_humidity(1x1), testlight2(1x1), testlight1(1x1)
+    # - empty: 1
+    - light_level(1x1), porch_motion(1x1), garage1(1x1), garage2(1x1), garage3(1x1)
+    # - empty: 1
+    - media_player.kitchen_home(2x2), summary(2x2), door1 
+    - empty: 1
+    
+    
+    
+    
+    
+    

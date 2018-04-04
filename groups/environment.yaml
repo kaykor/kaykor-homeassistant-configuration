@@ -1,0 +1,8 @@
+  name: Environment
+  view: true
+  icon: mdi:weather-pouring
+  entities:
+    - group.weather_overview
+    - group.weather_forecast
+    # - group.darksky_group
+

@@ -1,0 +1,9 @@
+  name: Media White
+  view: no
+  # icon: mdi:cast-connected
+  entities:
+    - media_player.white
+    - sensor.music_listening_this_week_white
+    - sensor.percent_playing_music_weekly_white
+    - sensor.music_listening_this_month_white
+    - sensor.percent_playing_music_monthly_white

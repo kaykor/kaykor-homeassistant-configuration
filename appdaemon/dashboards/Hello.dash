@@ -1,0 +1,138 @@
+#
+# Main arguments, all optional
+#
+title: Control Panel
+widget_dimensions: [120, 120]
+widget_size: [1, 1]
+widget_margins: [5, 5]
+columns: 8
+
+clock:
+  widget_type: clock
+  
+basement_entry_door:
+    widget_type: lock
+    title: Basement Door
+    title2: Lower Entry
+    entity: lock.first_deadbolt_29
+    icon_on: mdi-door-open
+    icon_off: mdi-door
+    warn: 1
+
+basement_entry:
+  widget_type: light
+  title: Basement Entry
+  entity: light.basement_entry_41
+  icon_on: mdi-lightbulb
+  icon_off: mdi-lightbulb
+
+rec_panels:
+  widget_type: light
+  title: Rec Panels
+  entity: light.in_wall_dimmer_30
+  icon_on: mdi-lightbulb
+  icon_off: mdi-lightbulb
+
+rec_room_pots:
+  widget_type: light
+  title: Rec Room Pots
+  entity: light.rec_room_first_light_42
+  icon_on: mdi-lightbulb
+  icon_off: mdi-lightbulb
+
+basement_stairs:
+  widget_type: light
+  title: Basement Stairs
+  entity: light.stairway_basement_43
+  icon_on: mdi-lightbulb
+  icon_off: mdi-lightbulb
+
+granny_kitchen:
+  widget_type: switch
+  title: Granny Kitchen
+  entity: switch.granny_kitchen_38
+  icon_on: mdi-lightbulb
+  icon_off: mdi-lightbulb
+
+backdoor_light:
+  widget_type: light
+  title: Backdoor Lights
+  entity: light.hallway_backdoor_49
+  icon_on: mdi-lightbulb
+  icon_off: mdi-lightbulb
+
+kitchen_light_pots:
+  widget_type: light
+  title: Kitchen Lights
+  entity: light.kitchen_pots_45
+  icon_on: fa-cutlery
+  icon_off: fa-cutlery
+
+hall_bedroom_kids_light:
+  widget_type: light
+  title: Hallway Bedroom Lights
+  entity: light.hallway_bed_47
+  icon_on: fa-bed
+  icon_off: fa-bed
+  
+dining_room_light:
+  widget_type: light
+  entity: light.dining_room_48
+  icon_on: mdi-lightbulb
+  icon_off: mdi-lightbulb
+  title: Dining Room
+  # title2: Pot Lights
+  on_attributes:
+      brightness: 186
+
+living_room_light:
+  widget_type: light
+  entity: light.living_room_window_s_50
+  icon_on: mdi-lightbulb
+  icon_off: mdi-lightbulb
+  title: Living Room
+  # title2: Pot Lights
+  on_attributes:
+      brightness: 186
+
+master_hall_light:
+    widget_type: light
+    entity: light.master_bath_hall_51
+    icon_on: mdi-lightbulb
+    icon_off: mdi-lightbulb
+    title: Master Bath Hall
+    # title2: Pot Lights
+    on_attributes:
+        brightness: 186
+
+weather:
+  widget_type: weather
+  units: "&deg;C"
+
+summary:
+  widget_type: sensor
+  title: Summary
+  #precision: 0
+  value_style: "font-size: 100%"
+  entity: sun.sun
+  
+wireless_sensor_temperature:
+  widget_type: sensor
+  title: Temperature
+  units: "&deg;C"
+  precision: 0
+  entity: sensor.6_in_1_multisensor_temperature_24
+
+wireless_sensor_humidity:
+  widget_type: sensor
+  title: Humidity
+  units: "%"
+  precision: 0
+  entity: sensor.6_in_1_multisensor_humidity_26
+
+layout:
+  - clock(2x1), basement_entry, rec_panels, rec_room_pots, basement_stairs, backdoor_light
+  -  weather(2x2), hall_bedroom_kids_light, kitchen_light_pots, dining_room_light, living_room_light, master_hall_light
+  - wireless_sensor_temperature, wireless_sensor_humidity, granny_kitchen, basement_entry_door, summary
+  -
+  - include: bottom_panel

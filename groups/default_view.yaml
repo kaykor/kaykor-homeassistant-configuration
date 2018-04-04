@@ -1,0 +1,7 @@
+  name: default_view
+  view: true
+  entities:
+
+    - sun.sun
+    - weblink.my_home
+    - weblink.traccar

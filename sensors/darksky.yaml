@@ -1,0 +1,24 @@
+  - platform: darksky
+    api_key: !secret darksky_api
+    units: ca
+    update_interval: '01:00'
+    monitored_conditions:
+      - summary
+      - icon
+      - nearest_storm_distance
+      - temperature
+      - apparent_temperature
+      - uv_index
+      - wind_speed
+      - humidity
+      - precip_type
+      - precip_intensity
+      - precip_intensity_max
+      - precip_probability
+      - dew_point
+      - wind_bearing
+      - cloud_cover
+      - pressure
+      - minutely_summary
+      - hourly_summary
+      - daily_summary

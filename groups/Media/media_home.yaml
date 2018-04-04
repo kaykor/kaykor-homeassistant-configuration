@@ -1,0 +1,9 @@
+  name: Google Home
+  view: no
+  # icon: mdi:cast-connected
+  entities:
+    - media_player.kitchen_home
+    - sensor.music_listening_this_week_home
+    - sensor.percent_playing_music_weekly_home
+    - sensor.music_listening_this_month_home
+    - sensor.percent_playing_music_monthly_home

@@ -1,0 +1,28 @@
+logbook:
+## https://home-assistant.io/components/logbook/8
+  include:
+    domains:
+      - script
+      - sensor
+      - binary_sensor
+      - switch
+      - media_player
+      - light
+    # entities:
+# - device_tracker.1,2,3,4,5
+
+  exclude:
+    domains:
+      - sun
+      - weblink
+      - group
+      - mqtt
+    entities:
+      - sensor.last_boot
+      - sensor.since_last_boot
+      - sensor.since_last_boot_template
+      - sensor.date
+      - sensor.time
+      - sensor.time_template
+      - sensor.sun_template
+      - sensor.workday

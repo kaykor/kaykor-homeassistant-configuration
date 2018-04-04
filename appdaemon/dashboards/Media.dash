@@ -1,0 +1,77 @@
+#
+# Main arguments, all optional
+#
+title: Media
+widget_dimensions: [120, 120]
+widget_size: [1, 1]
+widget_margins: [5, 5]
+columns: 8
+
+global_parameters:
+    use_comma: 0
+    precision: 1
+    use_hass_icon: 1
+    namespace: default
+    devices:
+      media_player:
+        step: 5
+# media_player:
+    # widget_type: media_player
+    # title: Google Home
+
+media_player1:
+    widget_type: media_player
+    title: Google Home My Office
+    entity: media_player.kitchen_home
+    icon_on: mdi-cast
+    icon_off: mdi-cast
+
+media_player2:
+    widget_type: media_player
+    title: Chromecast Audio Laundry Room
+    entity: media_player.boombox
+    icon_on: mdi-cast
+    icon_off: mdi-cast
+
+media_player3:
+    widget_type: media_player
+    title: Chromecast Audio Garage
+    entity: media_player.garage_chromecastaudio
+    icon_on: mdi-cast
+    icon_off: mdi-cast      
+    
+media_player4:
+    widget_type: media_player
+    title: Chromecast Video Living Room
+    entity: media_player.living_room
+    icon_on: mdi-cast
+    icon_off: mdi-cast          
+    
+media_player5:
+    widget_type: media_player
+    title: Chromecast Video Workout Room
+    entity: media_player.office
+    icon_on: mdi-cast
+    icon_off: mdi-cast
+    
+media_player6:
+    widget_type: media_player
+    title: Chromecast Audio Whole House
+    entity: media_player.home_group
+    icon_on: mdi-cast
+    icon_off: mdi-cast    
+    
+media_player7:
+    widget_type: media_player
+    title: Chromecast Audio Recreation Room
+    entity: media_player.white
+    icon_on: mdi-cast
+    icon_off: mdi-cast     
+    
+layout:
+
+  - media_player1(2x2),media_player2(2x2), media_player3(2x2), media_player4(2x2)
+  -
+  - media_player5(2x2), media_player6(2x2), media_player7(2x2)
+  -
+  - include: bottom_panel

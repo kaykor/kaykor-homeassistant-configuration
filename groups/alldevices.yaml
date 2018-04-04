@@ -1,0 +1,6 @@
+  # name: Devices on the network
+  # view: true
+  # icon: mdi:wifi
+  # entities:
+    # - device_tracker.34d270b60b6c
+    # # - group.all_devices

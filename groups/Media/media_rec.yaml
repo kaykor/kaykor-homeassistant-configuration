@@ -1,0 +1,10 @@
+  name: Media Rec HDMI 2
+  view: no
+  # icon: mdi:cast-connected
+  entities:
+    - media_player.rec_hdmi2
+    - media_player.pn59d550_pn59d550
+    - sensor.music_listening_this_week_rec
+    - sensor.percent_playing_music_weekly_rec
+    - sensor.music_listening_this_month_rec
+    - sensor.percent_playing_music_monthly_rec

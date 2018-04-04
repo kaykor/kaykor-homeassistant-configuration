@@ -1,0 +1,16 @@
+    name: Lights
+    view: true
+    entities:
+
+      - light.in_wall_dimmer_30
+      - switch.granny_kitchen_38
+      - light.basement_entry_41
+      - light.rec_room_first_light_42
+      - light.stairway_basement_43
+      - light.kitchen_pots_45
+      - light.hallway_bed_47
+      - light.dining_room_48
+      - light.hallway_backdoor_49
+      - light.living_room_window_s_50
+      - light.master_bath_hall_51
+

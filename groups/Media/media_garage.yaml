@@ -1,0 +1,9 @@
+  name: Media Garage
+  view: no
+  #icon: mdi:cast-connected
+  entities:
+    - media_player.garage_chromecastaudio
+    - sensor.music_listening_this_week
+    - sensor.percent_playing_music_weekly
+    - sensor.music_listening_this_month
+    - sensor.percent_playing_music_monthly

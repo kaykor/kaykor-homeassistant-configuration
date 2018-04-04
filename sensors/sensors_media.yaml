@@ -1,0 +1,266 @@
+  # - platform: plex
+    # host: 192.168.2.41
+    # name: Plex Desk
+    # usename: hass
+    # # password: "5292"
+###########################
+  - platform: history_stats
+    name: Music Listening This Week
+    entity_id: media_player.garage_chromecastaudio
+    state: 'playing'
+    type: time
+    start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+    end: '{{ now() }}'
+
+  - platform: history_stats
+    name: Music Listening This Month
+    entity_id: media_player.garage_chromecastaudio
+    state: 'playing'
+    type: time
+    end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    duration:
+      days: 30
+
+  - platform: template
+    sensors:
+      percent_playing_music_weekly:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_week')|float * 100 / 168) }}"
+
+  - platform: template
+    sensors:
+      percent_playing_music_monthly:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_month')|float * 100 / 720) }}"
+###########################
+  - platform: history_stats
+    name: Music Listening This Week White
+    entity_id: media_player.white
+    state: 'playing'
+    type: time
+    start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+    end: '{{ now() }}'
+
+  - platform: history_stats
+    name: Music Listening This Month White
+    entity_id: media_player.white
+    state: 'playing'
+    type: time
+    end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    duration:
+      days: 30
+
+  - platform: template
+    sensors:
+      percent_playing_music_weekly_white:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_week_white')|float * 100 / 168) }}"
+
+  - platform: template
+    sensors:
+      percent_playing_music_monthly_white:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_month_white')|float * 100 / 720) }}"
+###############################
+  - platform: history_stats
+    name: Music Listening This Week Rec
+    entity_id: media_player.rec_hdmi2
+    state: 'playing'
+    type: time
+    start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+    end: '{{ now() }}'
+
+  - platform: history_stats
+    name: Music Listening This Month Rec
+    entity_id: media_player.rec_hdmi2
+    state: 'playing'
+    type: time
+    end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    duration:
+      days: 30
+
+  - platform: template
+    sensors:
+      percent_playing_music_weekly_rec:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_week_rec')|float * 100 / 168) }}"
+
+  - platform: template
+    sensors:
+      percent_playing_music_monthly_rec:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_month_rec')|float * 100 / 720) }}"
+#############################
+  - platform: history_stats
+    name: Music Listening This Week Lounge
+    entity_id: media_player.lounge
+    state: 'playing'
+    type: time
+    start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+    end: '{{ now() }}'
+
+  - platform: history_stats
+    name: Music Listening This Month Lounge
+    entity_id: media_player.lounge
+    state: 'playing'
+    type: time
+    end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    duration:
+      days: 30
+
+  - platform: template
+    sensors:
+      percent_playing_music_weekly_lounge:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_week_lounge')|float * 100 / 168) }}"
+
+  - platform: template
+    sensors:
+      percent_playing_music_monthly_lounge:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_month_lounge')|float * 100 / 720) }}"
+##################################
+  - platform: history_stats
+    name: Music Listening This Week Liv
+    entity_id: media_player.living_room
+    state: 'playing'
+    type: time
+    start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+    end: '{{ now() }}'
+
+  - platform: history_stats
+    name: Music Listening This Month Liv
+    entity_id: media_player.living_room
+    state: 'playing'
+    type: time
+    end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    duration:
+      days: 30
+
+  - platform: template
+    sensors:
+      percent_playing_music_weekly_liv:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_week_liv')|float * 100 / 168) }}"
+
+  - platform: template
+    sensors:
+      percent_playing_music_monthly_liv:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_month_liv')|float * 100 / 720) }}"
+##################################
+  - platform: history_stats
+    name: Music Listening This Week Home
+    entity_id: media_player.kitchen_home
+    state: 'playing'
+    type: time
+    start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+    end: '{{ now() }}'
+
+  - platform: history_stats
+    name: Music Listening This Month Home
+    entity_id: media_player.kitchen_home
+    state: 'playing'
+    type: time
+    end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    duration:
+      days: 30
+
+  - platform: template
+    sensors:
+      percent_playing_music_weekly_home:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_week_home')|float * 100 / 168) }}"
+
+  - platform: template
+    sensors:
+      percent_playing_music_monthly_home:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_month_home')|float * 100 / 720) }}"
+   ##################################
+  - platform: history_stats
+    name: Music Listening This Week Group
+    entity_id: media_player.home_group
+    state: 'playing'
+    type: time
+    start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+    end: '{{ now() }}'
+
+  - platform: history_stats
+    name: Music Listening This Month Group
+    entity_id: media_player.home_group
+    state: 'playing'
+    type: time
+    end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    duration:
+      days: 30
+
+  - platform: template
+    sensors:
+      percent_playing_music_weekly_group:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_week_group')|float * 100 / 168) }}"
+
+  - platform: template
+    sensors:
+      percent_playing_music_monthly_group:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_month_group')|float * 100 / 720) }}" 
+   ##################################
+  - platform: history_stats
+    name: Music Listening This Week Gym
+    entity_id: media_player.gymnastics
+    state: 'playing'
+    type: time
+    start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+    end: '{{ now() }}'
+
+  - platform: history_stats
+    name: Music Listening This Month Gym
+    entity_id: media_player.gymnastics
+    state: 'playing'
+    type: time
+    end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    duration:
+      days: 30
+
+  - platform: template
+    sensors:
+      percent_playing_music_weekly_gym:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_week_gym')|float * 100 / 168) }}"
+
+  - platform: template
+    sensors:
+      percent_playing_music_monthly_gym:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_month_gym')|float * 100 / 720) }}"  
+   ##################################
+  - platform: history_stats
+    name: Music Listening This Week Boom
+    entity_id: media_player.boombox
+    state: 'playing'
+    type: time
+    start: '{{ as_timestamp( now().replace(hour=0).replace(minute=0).replace(second=0) ) - now().weekday() * 86400 }}'
+    end: '{{ now() }}'
+
+  - platform: history_stats
+    name: Music Listening This Month Boom
+    entity_id: media_player.boombox
+    state: 'playing'
+    type: time
+    end: '{{ now().replace(hour=0).replace(minute=0).replace(second=0) }}'
+    duration:
+      days: 30
+
+  - platform: template
+    sensors:
+      percent_playing_music_weekly_boom:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_week_boom')|float * 100 / 168) }}"
+
+  - platform: template
+    sensors:
+      percent_playing_music_monthly_boom:
+        unit_of_measurement: "%"
+        value_template: "{{ '%.1f'|format(states('sensor.music_listening_this_month_boom')|float * 100 / 720) }}"         

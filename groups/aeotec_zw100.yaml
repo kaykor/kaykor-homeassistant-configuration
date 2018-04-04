@@ -1,0 +1,17 @@
+  name: Aeotec zw100 Multisensor 6
+  view: no
+  icon: mdi:hexagon-multiple
+  entities:
+     - sensor.6_in_1_multisensor_temperature_24
+     - sensor.6_in_1_multisensor_humidity_26
+     - sensor.6_in_1_multisensor_light_25
+     - sensor.aeotec_zw100_multisensor_6_ultraviolet    
+     - sensor.aeotec_zw100_multisensor_6_burglar
+     - sensor.aeotec_zw100_multisensor_6_alarm_level
+     - sensor.aeotec_zw100_multisensor_6_alarm_type
+     - zwave.aeotec_zw090_zstick_gen5_us
+     - switch.multisensor_6_in_1_23
+     - binary_sensor.multisensor_6_in_1_23     
+
+
+

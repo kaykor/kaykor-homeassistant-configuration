@@ -1,0 +1,20 @@
+# #camera 1:
+#   - platform: ffmpeg
+#     name: Kaylee Bedroom
+#     input: rtsp://192.168.2.51/0
+# #camera 2:
+#   - platform: ffmpeg
+#     name: Koral Bedroom
+#     input: rtsp://192.168.2.51/1
+# #camera 3:
+#   - platform: ffmpeg
+#     name: Kaylee Bedroom2
+#     input: rtsp://192.168.2.51/2
+# #camera 4:
+#   - platform: ffmpeg
+#     name: Rec Room
+#     input: rtsp://192.168.2.51/3
+#camera 5:
+  # - platform: ffmpeg
+  #   name: Rec Room
+  #   input: rtsp://192.168.2.57/0

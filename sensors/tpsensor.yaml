@@ -1,0 +1,45 @@
+- platform: template
+  name: Garage_Miner
+  sensors:
+    tp_link_amps:
+      friendly_name: "Amps"
+      value_template: '{{ states.switch.garage_miner.attributes["current_a"] | replace(" A", "") | float }}'
+      unit_of_measurement: 'A'
+    tp_link_watts:
+      friendly_name: "Watts"
+      value_template: '{{ states.switch.garage_miner.attributes["current_power_w"] | replace(" W", "") | float }}'
+      unit_of_measurement: 'W'
+    tp_link_kw:
+      friendly_name: "Current KiloWatts"
+      value_template: '{{ states.switch.garage_miner.attributes["total_energy_kwh"] | replace(" kW", "") | float }}'
+      unit_of_measurement: 'kWh'
+    tp_link_kw_today:
+      friendly_name: "Today's KiloWatts"
+      value_template: '{{ states.switch.garage_miner.attributes["today_energy_kwh"] | replace(" kW", "") | float }}'
+      unit_of_measurement: 'kWh'      
+    tp_link_volts:
+      friendly_name: "Current Voltage"
+      value_template: '{{ states.switch.garage_miner.attributes["voltage"] | replace(" V", "") | float }}'
+      unit_of_measurement: 'V'
+      
+    tp_link_amps_2:
+      friendly_name: "Amps"
+      value_template: '{{ states.switch.garage_2_right.attributes["current_a"] | replace(" A", "") | float }}'
+      unit_of_measurement: 'A'
+    tp_link_watts_2:
+      friendly_name: "Watts"
+      value_template: '{{ states.switch.garage_2_right.attributes["current_power_w"] | replace(" W", "") | float }}'
+      unit_of_measurement: 'W'
+    tp_link_kw_2:
+      friendly_name: "Current KiloWatts"
+      value_template: '{{ states.switch.garage_2_right.attributes["total_energy_kwh"] | replace(" kW", "") | float }}'
+      unit_of_measurement: 'kWh'
+    tp_link_kw_today_2:
+      friendly_name: "Today's KiloWatts"
+      value_template: '{{ states.switch.garage_2_right.attributes["today_energy_kwh"] | replace(" kW", "") | float }}'
+      unit_of_measurement: 'kWh'      
+    tp_link_volts_2:
+      friendly_name: "Current Voltage"
+      value_template: '{{ states.switch.garage_2_right.attributes["voltage"] | replace(" V", "") | float }}'
+      unit_of_measurement: 'V'      
+      
