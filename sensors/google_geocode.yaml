@@ -1,0 +1,41 @@
+  # - platform: google_geocode
+    # name: Randy
+    # api_key: !secretgoogle_geocode_api
+    # origin: device_tracker.randy_cell_phone
+    # options: street_number, street, city
+    # display_zone: hide
+
+  # - platform: google_geocode
+    # name: Kelsey
+    # api_key: !secretgoogle_geocode_api
+    # origin: device_tracker.kelsey_shank
+    # options: street_number, street, city
+    # display_zone: hide
+
+  # - platform: google_geocode
+    # name: Laurie
+    # api_key: !secretgoogle_geocode_api
+    # origin: device_tracker.laurie_cell
+    # options: street_number, street, city
+    # display_zone: hide
+
+  # - platform: google_geocode
+    # name: Koral
+    # api_key: !secretgoogle_geocode_api
+    # origin: device_tracker.koral_cell
+    # options: street_number, street, city
+    # display_zone: hide
+
+  # - platform: traccar
+    # name: Derek
+    # # api_key: !secretgoogle_geocode_api
+    # origin: device_tracker.keelin_1
+    # # options: street_number, street, city
+    # display_zone: hide
+
+  # - platform: google_geocode
+    # name: Kaylee
+    # api_key: !secretgoogle_geocode_api
+    # origin: device_tracker.5
+    # options: street_number, street, city
+    # display_zone: hide

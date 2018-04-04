@@ -1,0 +1,5 @@
+name: Toppers
+latitude: !secret topp_lat
+longitude: !secret topp_lon
+radius: 100
+icon: mdi:pizza

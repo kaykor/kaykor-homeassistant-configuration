@@ -1,0 +1,6 @@
+weblink:
+  entities:
+    - name: My Home
+      url: http://192.168.2.34:81
+    - name: Traccar
+      url: http://192.168.2.34:8082

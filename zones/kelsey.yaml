@@ -1,0 +1,5 @@
+name: Kelsey_Home
+latitude: !secret kel_lat
+longitude: !secret kel_lon
+radius: 100
+icon: mdi:castle
