@@ -1,0 +1,38 @@
+- action:
+  - alias: Turn on kitchen light when there is movement
+    data: {}
+    entity_id: switch.granny_kitchen_38
+    service: homeassistant.turn_on
+  alias: grannie_light_turn_on_1
+  condition: []
+  id: '1503245808633'
+  trigger:
+  - entity_id: binary_sensor.multisensor_6_in_1_23
+    from: 'off'
+    platform: state
+    to: 'on'
+- action:
+  - alias: Turn off kitchen light 10 minutes after last movement
+    entity_id: switch.granny_kitchen_38
+    service: homeassistant.turn_off
+  alias: grannie_light_turn_off_1
+  condition: []
+  id: '1503257189066'
+  trigger:
+  - entity_id: binary_sensor.multisensor_6_in_1_23
+    for:
+      minutes: 6
+    from: 'on'
+    platform: state
+    to: 'off'
+- action:
+  - event: ha_last_restart
+    event_data: {}
+  alias: HA Last Restart
+  condition: []
+  id: '1503887692101'
+  trigger:
+  - event: start
+    platform: homeassistant
+  - platform: template
+    value_template: timestamp_custom("%b %d %X")

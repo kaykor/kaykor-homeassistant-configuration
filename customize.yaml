@@ -1,0 +1,149 @@
+
+####WEATHER####
+
+   # group.all_devices:
+     # hidden: false
+     # friendly_name: 'Tracked Devices'
+
+########CUSTOMIZE SENSORS########
+
+   sensor.pws_temp_c:
+     icon: mdi:thermometer
+     friendly_name: Outdoor
+
+   media_player.boombox:
+     friendly_name: Chromecast Laundry Boom Box
+
+   media_player.gymnastics:
+     friendly_name: Sonos Gymnastics Room
+
+   # media_player.garage_chromecastaudio:
+     # friendly_name: Chromecast Garage
+
+   media_player.home_group:
+     friendly_name: ChromeCast Home Group
+
+   media_player.kitchen_home:
+     friendly_name: Google Home
+
+   media_player.living_room:
+     friendly_name: Chromecast Video Living Room
+
+   media_player.lounge:
+     friendly_name: Sonos Kitchen
+
+   media_player.rec_hdmi2:
+     friendly_name: Chromecast Video Recreation Room
+
+   media_player.white:
+     friendly_name: Chromecast Computer Speakers Rec
+
+   media_player.pn59d550_pn59d550:
+     friendly_name: Samsung TV Rec Room
+
+   cover.left_garage_door_opener:
+     device_class: garage
+     friendly_name: Left Garage
+
+   cover.right_garage_door_opener:
+     device_class: garage
+     friendly_name: Right Garage
+
+   cover.garage_door_opener:
+     device_class: garage
+     friendly_name: 270 Oak W Garage
+
+########################### synology ######################
+   sensor.status_sda:
+     hidden: true
+   sensor.status_sdb:
+     hidden: true
+   sensor.status_sdc:
+     hidden: true
+   sensor.status_sdd:
+     hidden: true
+   sensor.status_sde:
+     hidden: true
+   sensor.status_sdf:
+     hidden: true
+   sensor.status_sdg:
+     hidden: true
+   sensor.status_sdh:
+     hidden: true
+
+   sensor.status_smart_sda:
+     hidden: true
+   sensor.status_smart_sdb:
+     hidden: true
+   sensor.status_smart_sdc:
+     hidden: true
+   sensor.status_smart_sdd:
+     hidden: true
+   sensor.status_smart_sde:
+     hidden: true
+   sensor.status_smart_sdf:
+     hidden: true
+   sensor.status_smart_sdg:
+     hidden: true
+   sensor.status_smart_sdh:
+     hidden: true
+
+   sensor.below_min_remaining_life_sda:
+     hidden: true
+   sensor.below_min_remaining_life_sdb:
+     hidden: true
+   sensor.below_min_remaining_life_sdc:
+     hidden: true
+   sensor.below_min_remaining_life_sdd:
+     hidden: true
+   sensor.below_min_remaining_life_sde:
+     hidden: true
+   sensor.below_min_remaining_life_sdf:
+     hidden: true
+   sensor.below_min_remaining_life_sdg:
+     hidden: true
+   sensor.below_min_remaining_life_sdh:
+     hidden: true
+
+   sensor.exceeded_max_bad_sectors_sda:
+     hidden: true
+   sensor.exceeded_max_bad_sectors_sdb:
+     hidden: true
+   sensor.exceeded_max_bad_sectors_sdc:
+     hidden: true
+   sensor.exceeded_max_bad_sectors_sdd:
+     hidden: true
+   sensor.exceeded_max_bad_sectors_sde:
+     hidden: true
+   sensor.exceeded_max_bad_sectors_sdf:
+     hidden: true
+   sensor.exceeded_max_bad_sectors_sdg:
+     hidden: true
+   sensor.exceeded_max_bad_sectors_sdh:
+     hidden: true
+###############################################################     
+   sensor.percent_playing_music_weekly:
+     friendly_name: Weekly Listen
+     icon: mdi:music-circle
+   sensor.percent_playing_music_monthly:
+     friendly_name: Monthly Listen
+     icon: mdi:music-box-outline
+   sensor.percent_watching_video_weekly:
+     friendly_name: Weekly Watch
+     icon: mdi:filmstrip
+   sensor.percent_watching_video_monthly:
+     friendly_name: Monthly Watch
+     icon: mdi:movie
+   sensor.music_listening_this_week:
+     friendly_name: Weekly Listen Hours
+     icon: mdi:music-circle
+   sensor.music_listening_this_month:
+     friendly_name: Monthly Listen Hours
+     icon: mdi:music-box-outline
+   sensor.video_watching_this_week:
+     friendly_name: Weekly Watch Hours
+     icon: mdi:filmstrip
+   sensor.video_watching_this_month:
+     friendly_name: Monthly Watch Hours
+     icon: mdi:movie
+###############################################################  

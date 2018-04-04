@@ -1,0 +1,33 @@
+  # - platform: owntracks
+    # max_gps_accuracy: 200
+    # consider_home: 60
+    # interval_seconds: 12
+    # track_new_devices: yes
+
+  # - platform: mqtt_json
+  #   devices:
+  #     Randy2: zanzito/ee7fa5a814e24014/location
+
+  # - platform: traccar
+    # username: !secret traccar_username
+    # password: !secret traccar_password
+    # host: !secret traccar_host
+    
+  # -  platform: unifi
+  #    username: Randy
+  #    password: aC7ion+5292
+  #    host: 192.168.2.169
+  #    verify_ssl: false
+
+  # username: !secret owntracks_username
+    # password: !secret owntracks_password
+    # host: 192.168.2.46
+    # interval_seconds: 10
+    # consider_home: 180
+    # track_new_devices: yes
+    # verify_ssl: 'True'
+
+  - platform: traccar
+    username: kaykor@gmail.com
+    password: aC7ion&5292
+    host: http://192.168.2.34:8082

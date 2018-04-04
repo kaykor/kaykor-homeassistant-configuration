@@ -1,0 +1,102 @@
+homeassistant:
+
+  name: Home
+  latitude: !secret lat
+  longitude: !secret lon
+  elevation: 1212
+  unit_system: metric
+  time_zone: America/Toronto
+  customize: !include customize.yaml
+  packages: !include_dir_named packages
+frontend:
+
+# EDITING CONFIG VIA HASS CONFIGURATOR
+panel_iframe:
+  configurator:
+    title: Configurator
+    icon: mdi:wrench
+    url: http://192.168.2.9:3218
+  nodered:
+    title: Node-RED
+    icon: mdi:nodejs
+    url: http://192.168.2.9:1880
+  dashboard:
+    title: 'HADashboard'
+    url: 'http://192.168.2.9:5050'
+    icon: mdi:apps
+
+map:
+config:
+# hassio:
+# mqtt: !include mqtt.yaml
+
+
+http:
+  # Uncomment this to add a password (recommended!)
+  # api_password: !secret http_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+sun:
+
+# zwave:
+  # usb_path: /dev/ttyACM0
+
+vera:
+  vera_controller_url: http://192.168.2.162:3480/
+
+notify:
+  - name: NOTIFIER_NAME
+    platform: pushbullet
+    api_key: !secret notify_api_key
+
+cover:
+  - platform: myq
+    username: !secret myq_username
+    password: !secret myq_password
+    type: chamberlain
+    
+switch:
+  - platform: tplink
+    host: 192.168.2.4
+    
+  - platform: tplink
+    host: 192.168.2.128
+    
+  - platform: tplink
+    host: 192.168.2.56
+
+  - platform: tplink
+    host: 192.168.2.71
+
+# google:
+  # client_id: !secret OAuth_client_id
+  # client_secret: !secret OAuth_client_secret
+
+# Text to speech
+tts:
+  platform: google
+
+#camera: !include_dir_merge_list cameras
+sensor: !include_dir_merge_list sensors
+group: !include_dir_named groups
+automation: !include automations.yaml
+script: !include scripts.yaml
+shell_command: !include shell_commands.yaml
+zone: !include_dir_list zones
+# device_tracker: !include device_tracker.yaml

@@ -1,0 +1,36 @@
+media_player.lounge:
+  name:
+  platform: sonos
+  unique_id: RINCON_B8E937E918E001400
+media_player.garage_chromecastaudio:
+  name:
+  platform: cast
+  unique_id: 13ec705c-40a9-f2af-0a6a-de9f4e0e613d
+media_player.office:
+  name:
+  platform: cast
+  unique_id: 17772f85-f491-7d07-fe60-1125c8ecb77c
+media_player.kitchen_home:
+  name:
+  platform: cast
+  unique_id: e8d79d76-4e33-aaab-e92b-a3449a10a652
+media_player.living_room:
+  name:
+  platform: cast
+  unique_id: 7f055403-03ef-470f-ceef-574e9bda6397
+media_player.boombox:
+  name:
+  platform: cast
+  unique_id: af074a65-05f4-2825-4b8a-b48b314b4778
+media_player.home_group:
+  name:
+  platform: cast
+  unique_id: 4df5e976-5d92-420f-a0f2-fc46cf5a4459
+media_player.rec_hdmi2:
+  name:
+  platform: cast
+  unique_id: a8574b4d-6755-89d5-9904-a456b9243d9c
+media_player.white:
+  name:
+  platform: cast
+  unique_id: b514299f-e648-e175-2e8e-78ebd70dbbbe

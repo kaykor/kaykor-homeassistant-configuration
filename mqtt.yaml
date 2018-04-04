@@ -1,0 +1,6 @@
+  broker: m12.cloudmqtt.com
+  port: 17789
+  client_id: homeassistant_1
+  keepalive: 60
+  username: !secret mqtt_username
+  password: !secret mqtt_password
